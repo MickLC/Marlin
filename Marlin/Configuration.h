@@ -1255,7 +1255,7 @@
  * -  PROBE_OFFSET_WIZARD (configuration_adv.h) can be used for setting the Z offset.
  *
  * Assuming the typical work area orientation:
- *  - Probe to RIGHT of the Nozzle has a Positive X offset
+ *  - Probe to RIGHT of the Nozzle has a Positive X offset 
  *  - Probe to LEFT  of the Nozzle has a Negative X offset
  *  - Probe in BACK  of the Nozzle has a Positive Y offset
  *  - Probe in FRONT of the Nozzle has a Negative Y offset
@@ -1276,7 +1276,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -46.8, 1.2, -2.4 }
+#define NOZZLE_TO_PROBE_OFFSET { -46.8, 1.2, -1.6 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1365,7 +1365,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
